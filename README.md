@@ -1,37 +1,37 @@
-# Diabetes-Diagnosis
-Dataset: Pima Indians Diabetes Diagnosis 🩺
+# Diabetes Diagnosis
 
-This repository contains a complete machine learning pipeline to predict the onset of diabetes in Pima Indian women based on diagnostic measurements. 
+## Project Overview
+This project aims to utilize machine learning techniques to assist in the diagnosis of diabetes. By analyzing various health parameters, our model can predict the likelihood of diabetes, helping healthcare professionals in making informed decisions.
 
-## 📋 Project Overview
-The goal of this project is to build and optimize a binary classifier that predicts whether a patient has diabetes (Outcome 1) or not (Outcome 0). The dataset consists of 768 entries with 8 medical predictor variables.
+## Target Audience
+This project is designed for healthcare professionals, data scientists, and researchers who are interested in diabetes diagnosis and machine learning applications.
 
-## 🛠️ Tech Stack
-* **Language:** Python 3.x
-* **Environment:** Google Colab
-* **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
+## How to Use This Project
+1. **Clone the Repository**: Use the following command to clone the repository:
+   
+   ```bash
+   git clone https://github.com/arshdee17/Diabetes-Diagnosis.git
+   ```
+   
+2. **Navigate to the Project Directory**:
+   
+   ```bash
+   cd Diabetes-Diagnosis
+   ```
+   
+3. **Install Required Libraries**: Make sure to install the necessary libraries before running the project. You can use pip to install them:
+   
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
+   ```
 
-## 🚀 Workflow
+4. **Run the Application**: Follow the instructions in the code to run the application and start utilizing the model.
 
-### 1. Data Quality & EDA
-* **Imputation:** Identified "hidden" missing values (zeros) in Glucose, Blood Pressure, BMI, etc., and replaced them with median values grouped by Outcome.
-* **Visualization:** Utilized Histograms to understand distributions and a Correlation Heatmap to identify key predictors.
+## Installation Instructions
+- **Pandas**: A powerful data manipulation library.
+- **NumPy**: A package for scientific computing in Python.
+- **Matplotlib**: A plotting library for visualizing data.
+- **Seaborn**: A statistical data visualization library based on Matplotlib.
+- **Scikit-Learn**: A machine learning library for Python.
 
-### 2. Baseline Model
-* **Algorithm:** Logistic Regression
-* **Pre-processing:** StandardScaler was applied to normalize feature scales.
-* **Result:** Provided a baseline accuracy of ~76%, but highlighted a need for better recall in positive cases.
-
-### 3. Model Improvement (Optimized Model)
-* **Algorithm:** Random Forest Classifier
-* **Feature Selection:** Used `SelectKBest` to focus on the top 6 most impactful features.
-* **Tuning:** Performed Hyperparameter tuning via `GridSearchCV` to optimize `n_estimators` and `max_depth`.
-* **Impact:** Significant improvement in the F1-score and Recall, making the model more reliable for clinical clinical application.
-
-## 📊 Results
-The final model identifies **Glucose**, **BMI**, and **Age** as the most significant predictors of diabetes in this population.
-
-## 📂 Repository Structure
-* `diabetes.csv`: The raw dataset.
-* `Binary_Classification.ipynb`: The complete Python analysis and model code.
-* `README.md`: Project documentation.
+By following the above steps, you will be able to successfully set up and use the Diabetes Diagnosis project.
